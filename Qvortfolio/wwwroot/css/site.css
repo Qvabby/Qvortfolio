@@ -31,3 +31,9 @@ body {
     position:absolute;
     display:inline-flex;
 }
+
+/*qvabbyte image*/
+#qvabbyteimage{
+    opacity:0;
+    position:absolute;
+}

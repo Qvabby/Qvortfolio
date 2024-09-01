@@ -4,29 +4,66 @@
 // Write your JavaScript code.
 
 $(document).ready(function () {
+    //$("#q").attr('id', 'qbounce').addClass("gr").css("left", "0");
+    //$("#v").attr('id', 'vbounce').addClass("gr");
+    //$("#a").attr('id', 'abounce').addClass("gr");
+    //$("#b").attr('id', 'bbounce').addClass("gr");
+    //$("#b2").attr('id', 'b2bounce').addClass("gr");
+    //$("#y").attr('id', 'ybounce').addClass("gr");
+    //$("#t").attr('id', 'tbounce').addClass("gr");
+    //$("#e").attr('id', 'ebounce').addClass("gr");
+
+    $("#q").slideUp(0).delay(200).fadeIn(150).animate({
+        top: '50px'
+    });
     
-    $("#q").slideUp(0).delay(200).fadeIn(250).animate({
-        top: '40px'
+
+    $("#v").slideUp(0).delay(400).fadeIn(200).animate({
+        top: '90px'
     });
-    $("#v").slideUp(0).delay(450).fadeIn(300).animate({
-        top: '80px'
+    $("#a").slideUp(0).delay(700).fadeIn(250).animate({
+        top: '130px'
     });
-    $("#a").slideUp(0).delay(750).fadeIn(350).animate({
-        top: '120px'
+    $("#b").slideUp(0).delay(1050).fadeIn(300).animate({
+        top: '175px'
     });
-    $("#b").slideUp(0).delay(1100).fadeIn(400).animate({
-        top: '165px'
+    $("#b2").slideUp(0).delay(1400).fadeIn(350).animate({
+        top: '219px'
     });
-    $("#b2").slideUp(0).delay(1500).fadeIn(450).animate({
-        top: '209px'
+    $("#y").slideUp(0).delay(1800).fadeIn(400).animate({
+        top: '252px'
     });
-    $("#y").slideUp(0).delay(1950).fadeIn(500).animate({
-        top: '242px'
+    $("#t").slideUp(0).delay(2200).fadeIn(450).animate({
+        top: '307px'
     });
-    $("#t").slideUp(0).delay(2450).fadeIn(550).animate({
-        top: '296px'
-    });
-    $("#e").slideUp(0).delay(3000).fadeIn(600).animate({
-        top: '330px'
+    $("#e").slideUp(0).delay(2750).fadeIn(500).animate({
+        top: '344px'
     });
 });
+
+$(document).ready(function () {
+    $("#qvabbyteimage").delay(150).animate({ opacity: 1, top: "40px" }, 'slow', );
+    moveUp();
+    moveDown();
+}) 
+//function gl($param) {
+//    $param.delay(100).animate({ left: "-5px" }, { duration: 100, queue: false })
+//    $param.addClass("gr")
+//    $param.removeClass("gl")
+//    gr($param);
+    
+//}
+//function gr($param) {
+//    $param.delay(100).animate({ left: "5px" }, {duration:100, queue: false })
+//    $param.addClass("gl")
+//    $param.removeClass("gr")
+//    gl($param);
+//}
+function moveDown() {
+    $("#qvabbyteimage").animate({ opacity: 1, top: '3px' }, 600, )
+    moveUp()
+}
+function moveUp() {
+    $("#qvabbyteimage").animate({ opacity: 0.90, top: "-3px" }, 600,);
+    moveDown()
+}
