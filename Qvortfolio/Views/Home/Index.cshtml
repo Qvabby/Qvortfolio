@@ -1,10 +1,10 @@
 ﻿@{
     ViewData["Title"] = "|Home|";
 }
-<div class="HeadPart p-3 container">
-    <div class="row HeadTry align-items-center text-center">
+<div class="container">
+    <div class="row HeadTry align-items-center text-center GrayishColor  p-3">
         <!-- Qvab section -->
-        <div class="col-md-4 text-center d-flex flex-column justify-content-center">
+        <div class="col-md-4 text-center d-flex flex-column justify-content-center ">
             <div id="qvabbytetext" class="display-4">
                 <div class="letterforqvatext">Q</div>
                 <div class="letterforqvatext">v</div>
@@ -30,4 +30,56 @@
             <p>(Mainly Focused On Back-end.)</p>
         </div>
     </div>
+    <hr />
+    <!-- About Me Section -->
+    <div class="row align-items-center text-center GrayishColor mt-5 p-3">
+        <div class="col-md-12">
+
+            <!-- About Me Title -->
+            <h3 class="mt-4">About Me</h3>
+
+            <!-- Personal Narrative -->
+            <p>
+                I’m passionate about building robust backend systems that solve real-world problems.
+                My development journey started when I realized the power of code to transform ideas into reality.
+            </p>
+
+            <!-- Personal Philosophy -->
+            <p>
+                My philosophy is simple: Clean code, meaningful impact, and continuous learning. I’m always
+                exploring new technologies and methodologies to enhance both user experience and system performance.
+            </p>
+
+            <!-- Skill Bars -->
+            <div class="skills mt-4">
+                <h5>Skills</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">C#</div>
+                </div>
+                @* <select>
+                    <option value="Entity">
+                        <div class="progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">EntityFramework</div>
+                        </div>
+                    </option>
+
+                </select> *@
+                <div class="progress mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                </div>
+                <div class="progress mt-2">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">SQL</div>
+                </div>
+                <div class="progress mt-2">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Java</div>
+                </div>
+            </div>
+
+            <!-- Call-to-Action Button -->
+            <div class="mt-4">
+                <a asp-controller="Home" asp-action="CV" class="btn btn-outline-warning btn-lg">View My CV</a>
+            </div>
+        </div>
+    </div>
+
 </div>
