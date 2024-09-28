@@ -1,39 +1,89 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+    }
 }
 
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+.HeadPart {
+    background-color: #f0f0f0;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+/* QVABBYTE letters */
+.letterforqvatext {
+    font-size: 2.5rem;
+    display: inline-block;
+    transition: all 0.6s ease-out;
+    animation: none; /* Initially no animation */
 }
 
-body {
-  margin-bottom: 60px;
+#qvabbytetext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*QVABBYTE TEXT.*/
+    #qvabbytetext > div {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        flex-wrap: wrap; /* Ensures the letters wrap on smaller screens */
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+    }
 
-#qvabbytetext{
-    position: relative;
-    text-align: left;
-}
-.letterforqvatext{
-    position:absolute;
-    display:inline-flex;
+/* Image appearance */
+#qvabbyteimage {
+    opacity: 0;
+    width: 150px; /* Adjust image size as needed */
+    height: 150px; /* Adjust image size as needed */
+    transition: all 0.6s ease-out;
+    top:150px;
+    position: relative; /* Ensure positioning for animation */
 }
 
-/*qvabbyte image*/
-#qvabbyteimage{
-    opacity:0;
-    position:absolute;
+.image-container {
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .letterforqvatext {
+        font-size: 1.5rem; /* Smaller letters on smaller screens */
+    }
+
+    #qvabbyteimage {
+        width: 120px; /* Reduce image size on small screens */
+        height: 120px;
+    }
+}
+
+/* Developer section */
+.HeadTry {
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 700;
+    color: #333;
+}
+
+/* Bounce animation keyframes */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Bounce animation with delay */
+.bouncing {
+    animation: bounce 0.8s ease-out;
 }
