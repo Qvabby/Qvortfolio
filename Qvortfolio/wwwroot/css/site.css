@@ -20,7 +20,7 @@ html {
     font-size: 2.5rem;
     display: inline-block;
     transition: all 0.6s ease-out;
-    animation: none; /* Initially no animation */
+    animation: none;
 }
 
 #qvabbytetext {
@@ -33,36 +33,37 @@ html {
         display: flex;
         justify-content: center;
         gap: 0.5rem;
-        flex-wrap: wrap; /* Ensures the letters wrap on smaller screens */
+        flex-wrap: wrap;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
     }
 
+.FullName {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
 /* Image appearance */
 #qvabbyteimage {
     opacity: 0;
-    width: 150px; /* Adjust image size as needed */
-    height: 150px; /* Adjust image size as needed */
+    width: 150px;
+    height: 150px;
     transition: all 0.6s ease-out;
     top:150px;
-    position: relative; /* Ensure positioning for animation */
+    position: relative;
 }
 
 .image-container {
     text-align: center;
 }
-
-/* Responsive adjustments */
-@media (max-width: 576px) {
-    .letterforqvatext {
-        font-size: 1.5rem; /* Smaller letters on smaller screens */
-    }
-
-    #qvabbyteimage {
-        width: 120px; /* Reduce image size on small screens */
-        height: 120px;
-    }
+.QvabbyteImageContainer {
+    margin-top: 1.5rem;
 }
+
 
 /* Developer section */
 .HeadTry {
@@ -89,4 +90,38 @@ h1 {
 /* Bounce animation with delay */
 .bouncing {
     animation: bounce 0.8s ease-out;
+}
+
+.footer{
+    position:relative!important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+    .letterforqvatext {
+        font-size: 1.5rem;
+    }
+
+    #qvabbyteimage {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .QvabbyteImageContainer{
+        margin-top:unset!important;
+    }
+}
+@media (max-width: 196px) {
+    #qvabbyteimage{
+        width:100px;
+        height:100px
+    }
+}
+@media (max-width: 176px) {
+    #qvabbyteimage {
+        width: 50px;
+        height: 50px
+    }
 }

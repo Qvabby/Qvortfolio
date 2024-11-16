@@ -1,5 +1,8 @@
+using Octokit;
+
 namespace Qvortfolio
 {
+
     public class Program
     {
         public static void Main(string[] args)
@@ -8,6 +11,24 @@ namespace Qvortfolio
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+
+            var configuration = new ConfigurationBuilder()
+   .SetBasePath(Directory.GetCurrentDirectory())
+   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+   .Build();
+            builder.Services.AddTransient<IGitHubClient>(provider =>
+            {
+                var configuration = provider.GetService<IConfiguration>();
+                var client = new GitHubClient(new ProductHeaderValue("Qvortfolio"));
+                var basicAuth = new Credentials(configuration["GitHub:Username"], configuration["Github:Password"]);
+                client.Credentials = basicAuth;
+                return client;
+            });
+
+
+
+
 
             var app = builder.Build();
 
