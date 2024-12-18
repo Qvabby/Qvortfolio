@@ -3,7 +3,7 @@
     ViewData["Title"] = "Qvabbyte";
 }
 <main class="container">
-    <div class="row HeadTry align-items-center text-center GrayishColor  p-3">
+    <div class="row HeadTry align-items-center text-center GrayishColor  p-3" style="border-radius: 5px;">
         <!-- Qvab section -->
         <div class="col-md-4 text-center d-flex flex-column justify-content-center position-relative">
             <div id="qvabbytetext" class="display-4">
@@ -39,7 +39,7 @@
     </div>
     <hr />
     <!-- About Me Section -->
-    <div class="row align-items-center text-center GrayishColor mt-5 p-3">
+    <div class="row align-items-center text-center GrayishColor mt-5 p-3" style="border-radius: 5px;">
         <div class="col-md-12">
 
             <!-- About Me Title -->
@@ -57,45 +57,70 @@
             </p>
 
             <!-- Skill Bars -->
+            @* <div class="skills mt-4"> *@
+            @*     <h5>Skills</h5> *@
+            @*     <div class="progress"> *@
+            @*         <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">C# .NET EF ASP.NET RAZOR/MVC APIs</div> *@
+            @*     </div> *@
+            @*     <div class="progress mt-2"> *@
+            @*         <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">HTML CSS BOOTSTRAP</div> *@
+            @*     </div> *@
+            @*     <div class="progress mt-2"> *@
+            @*         <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript Typescript</div> *@
+            @*     </div> *@
+            @*     <div class="progress mt-2"> *@
+            @*         <div class="progress-bar bg-warning progress-bar-animated progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">MSSQL</div> *@
+            @*     </div> *@
+            @*     <div class="progress mt-2"> *@
+            @*         <div class="progress-bar bg-danger progress-bar-animated progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Java / Java Spring</div> *@
+            @*     </div> *@
+            @* </div> *@
             <div class="skills mt-4">
                 <h5>Skills</h5>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">C# .NET EF ASP.NET RAZOR/MVC APIs</div>
-                </div>
-                <div class="progress mt-2">
-                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">HTML CSS BOOTSTRAP</div>
-                </div>
-                <div class="progress mt-2">
-                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript Typescript</div>
-                </div>
-                <div class="progress mt-2">
-                    <div class="progress-bar bg-warning progress-bar-animated progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">MSSQL</div>
-                </div>
-                <div class="progress mt-2">
-                    <div class="progress-bar bg-danger progress-bar-animated progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Java / Java Spring</div>
-                </div>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>C# .NET EF ASP.NET RAZOR/MVC APIs</span>
+                        <span class="badge text-success">Expert</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>HTML CSS BOOTSTRAP</span>
+                        <span class="badge text-primary">Advanced</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>JavaScript Typescript</span>
+                        <span class="badge text-warning">Intermediate</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>MSSQL</span>
+                        <span class="badge text-secondary">Basic</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>Java / Java Spring</span>
+                        <span class="badge text-danger">Beginner</span>
+                    </li>
+                </ul>
             </div>
 
             <!-- Call-to-Action Button -->
             <div class="mt-4">
-                <a asp-controller="Home" asp-action="CV" class="btn btn-outline-warning btn-lg">View My CV</a>
+                <a asp-controller="Home" asp-action="CV" class="btn btn-outline-dark btn-lg">View My CV</a>
             </div>
         </div>
     </div>
     <hr />
     <!-- Projects -->
-    <div class="row mt-5 p-3" style="background-color: #f7f7f7; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <div class="col-md-10 offset-md-1 align-self-center text-center justify-content-center align-items-center">
-            <h3 class="mt-2" style="color: #333; font-weight: bold;">Projects</h3>
-            <h1 class="text-center" style="color: #2196F3; font-weight: bold;">My GitHub Repositories</h1>
-            <div class="repositories-container" style="overflow-y: auto; height: 500px; padding: 20px; background-color: #fff; border: 1px solid #ddd; border-radius: 10px;">
+    <div class="row mt-5 p-3" style="background-color: #f0f0f0; border-radius: 5px;">
+        <div class="col-md-10 offset-md-1 align-self-center justify-content-center align-items-center">
+            @* <h3 class="mt-2" style="color: #333; font-weight: bold;">Projects</h3> *@
+            <h2 class="text-start text-dark" style=" font-weight: bold;">My GitHub Repositories</h2>
+            <div class="repositories-container scrollbar" id="scrollbar" style="overflow-y: auto; height: 500px; padding: 10px; background-color: #fff; border: 1px solid #151B23; border-radius: 10px; border-bottom-right-radius:3px; border-top-right-radius:3px;">
                 @foreach (var repository in Model)
                 {
-                    <div class="card" style="margin-bottom: 20px; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 10px;">
+                    <div class="card" style="margin-bottom: 20px; background-color: #161b22; border: 1px solid #ddd; border-radius: 10px;">
                         <div class="card-body">
-                            <h2 class="card-title" style="color: #333; font-weight: bold;">@repository.Name</h2>
+                            <h2 class="card-title" style="color: #2196F3; font-weight: bold;">@repository.Name</h2>
                             <p class="card-text" style="color: #666;">@repository.Description</p>
-                            <a href="@repository.HtmlUrl" class="btn btn-primary" style="background-color: #2196F3; border-color: #2196F3;">View on GitHub</a>
+                            <a href="@repository.HtmlUrl" target="_blank" class="btn" style="color: #74B9FF; border: 1px solid #74B9FF;border-radius: 2px; background-color:#151B23;">View on GitHub</a>
                         </div>
                     </div>
                 }
@@ -105,9 +130,9 @@
             <h1 style="color: #333; font-weight: bold;">My Published Works.</h1>
             <div class="card" style="margin-bottom: 20px; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 10px;">
                 <div class="card-body">
-                    <h2 class="card-title" style="color: #333; font-weight: bold;">Amo's Service</h2>
-                    <p class="card-text" style="color: #666;">I've solo developed this simple website, purpose of this website is just towing and car services.</p>
-                    <a href="https://www.amosservice.ge/" class="btn btn-primary btn-lg" style="background-color: #2196F3; border-color: #2196F3;">View Website</a>
+                    <h2 class="card-title text-start" style="color: #333; font-weight: bold;">Amo's Service</h2>
+                    <p class="card-text" style="color: #B7BDC8;">I've solo developed this simple website, purpose of this website is just towing and car services.</p>
+                    <a href="https://www.amosservice.ge/" target="_blank" class="btn btn-primary btn-lg" style="background-color: #2196F3; border-color: #2196F3;">View Website</a>
                 </div>
             </div>
         </div>

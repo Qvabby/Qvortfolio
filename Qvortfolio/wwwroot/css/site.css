@@ -96,6 +96,24 @@ h1 {
     position:relative!important;
 }
 
+.scrollbar {
+    overflow: auto;
+}
+#scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+
+#scrollbar::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #151B23;
+   
+}
+
+#scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #2196F3;
+}
+
 /* Responsive adjustments */
 @media (max-width: 576px) {
     .letterforqvatext {
