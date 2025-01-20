@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Octokit;
 using Qvortfolio.Models;
 using System.Diagnostics;
+
 
 namespace Qvortfolio.Controllers
 {

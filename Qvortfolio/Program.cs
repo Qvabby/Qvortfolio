@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Cors.Infrastructure;
 using Octokit;
 
 namespace Qvortfolio
@@ -26,9 +27,26 @@ namespace Qvortfolio
                 return client;
             });
 
+            //var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+            //builder.Services.AddCors(options =>
+            //{
+            //    options.AddPolicy(name: MyAllowSpecificOrigins,
+            //                      policy =>
+            //                      {
+            //                          policy.WithOrigins("https://qvabit-001-site1.ptempurl.com/",
+            //                                              "https://qvabit-001-site1.ptempurl.com/CV")
+            //                          .WithMethods("PUT", "DELETE", "GET");
 
-
-
+            //                      });
+            //});
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll",
+                    builder => builder
+                        .AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader());
+            });
 
             var app = builder.Build();
 
@@ -44,6 +62,10 @@ namespace Qvortfolio
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            //app.UseHttpsRedirection();
+            //app.UseCors(MyAllowSpecificOrigins);
+            app.UseCors("AllowAll");
 
             app.UseAuthorization();
 

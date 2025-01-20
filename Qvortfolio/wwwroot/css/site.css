@@ -7,7 +7,9 @@ html {
         font-size: 16px;
     }
 }
-
+#NavbarBrand{
+    display:none;
+}
 .HeadPart {
     background-color: #f0f0f0;
 }
@@ -86,7 +88,14 @@ h1 {
         transform: translateY(-20px);
     }
 }
-
+.IconAnim:hover{
+    transform:scale(1.05);
+    transition:1s;
+}
+.IconAnim:hover {
+    transform: scale(1);
+    transition:1s;
+}
 /* Bounce animation with delay */
 .bouncing {
     animation: bounce 0.8s ease-out;
@@ -119,10 +128,19 @@ h1 {
     .letterforqvatext {
         font-size: 1.5rem;
     }
+    
 
     #qvabbyteimage {
         width: 120px;
         height: 120px;
+    }
+}
+@media (max-width:575.5px){
+    #NavbarBrand {
+        display: flex;
+    }
+    #noneedanymore{
+        display:none;
     }
 }
 
