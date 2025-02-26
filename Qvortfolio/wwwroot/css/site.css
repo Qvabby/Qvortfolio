@@ -122,7 +122,9 @@ h1 {
     border-radius: 10px;
     background-color: #2196F3;
 }
-
+.mycv2 {
+    display: none;
+}
 /* Responsive adjustments */
 @media (max-width: 576px) {
     .letterforqvatext {
@@ -143,7 +145,15 @@ h1 {
         display:none;
     }
 }
+@media (max-width:820px){
+    .mycv {
+        display: none;
+    }
 
+    .mycv2 {
+        display: block;
+    }
+}
 @media (max-width: 768px) {
     .QvabbyteImageContainer{
         margin-top:unset!important;
