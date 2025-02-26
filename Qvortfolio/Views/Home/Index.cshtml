@@ -1,144 +1,135 @@
 ﻿@model List<GithubRepositoryViewModel>
 @{
-    ViewData["Title"] = "Qvabbyte";
+    ViewData["Title"] = "Portfolio";
 }
-<main class="container">
-    <div class="row HeadTry align-items-center text-center GrayishColor  p-3" style="border-radius: 5px;">
-        <!-- Qvab section -->
-        <div class="col-md-4 text-center d-flex flex-column justify-content-center position-relative">
-            <div id="qvabbytetext" class="display-4">
-                <div class="letterforqvatext">Q</div>
-                <div class="letterforqvatext">v</div>
-                <div class="letterforqvatext">a</div>
-                <div class="letterforqvatext">b</div>
-         
-                <div class="letterforqvatext">b</div>
-                <div class="letterforqvatext">y</div>
-                <div class="letterforqvatext">t</div>
-                <div class="letterforqvatext">e</div>
-            </div>
-            <!--Full Name Section-->
-            <div class="FullName">
-                <p class="mt-1" style="margin-bottom: 0.2em;">Saba Salukvadze</p>
-                <p><b>29.08.2006</b></p>
-            </div>
-        </div>
 
-        <!-- Image section -->
-        <div class="col-md-4 QvabbyteImageContainer text-center mt-lg-0 ">
-            <div class="image-container">
-                <img id="qvabbyteimage" class="rounded-circle" src="media/Qvabbyte/qvabbytefixed.png" />
-                <div class="d-flex justify-content-center align-items-center ps-1 pe-1 mt-3">
-                    <a class="m-1 IconAnim" href="https://github.com/Qvabby" target="_blank"><img src="media/MediaIcons/GithubIcon.png" alt="GitHub" width="25" height="25" /></a>
-                    <a class="m-1 IconAnim" href="https://stackoverflow.com/users/14074769/qvabby" target="_blank"><img src="media/MediaIcons/StackoverflowIcon.png" alt="StackOverflow" width="25" height="25" / style="margin-top: 0.45px;"></a>
-                    <a class="m-1 IconAnim" href="https://www.linkedin.com/in/saba-salukvadze-634589268/" target="_blank"><img src="media/MediaIcons/LinkedInIcon.png" alt="LinkedIn" width="24" height="24" /></a>
+    <div class="row HeadTry text-center GrayishColor " style="height:100%;">
+    <div class="col-md-12 row" style="height:100%;padding-left: 15px;">
+            <!-- Qvab section -->
+            <div class="col-md-8 text-center flex-column justify-content-center position-relative CHAETRIEDABLA" style="display:flex;">
+                <div id="qvabbytetext" class="display-4">
+                    <div class="letterforqvatext">S</div>
+                    <div class="letterforqvatext">A</div>
+                    <div class="letterforqvatext">B</div>
+                    <div class="letterforqvatext">A </div>
+                <div class="letterforqvatext">‎ ‎  </div>
+                    <div class="letterforqvatext"> S</div>
+                    <div class="letterforqvatext">A</div>
+                    <div class="letterforqvatext">L</div>
+                    <div class="letterforqvatext">U</div>
+                    <div class="letterforqvatext">K</div>
+                    <div class="letterforqvatext">V</div>
+                    <div class="letterforqvatext">A</div>
+                    <div class="letterforqvatext">D</div>
+                    <div class="letterforqvatext">Z</div>
+                    <div class="letterforqvatext">E</div>
                 </div>
+                <!--Full Name Section-->
+
+            <h1 class="display-4 FULLSTACKDEVELOPER" style="font-family:RobotoFlex; font-weight:300;">FULL-STACK DEVELOPER</h1>
             </div>
-        </div>
         <!-- Developer section -->
-        <div class="col-md-4 text-center mt-2">
-            <h1 class="display-4">Full-Stack Developer</h1>
-            <p>(Mainly Focused On Back-end.)</p>
-        </div>
-    </div>
-    <hr />
-    <!-- About Me Section -->
-    <div class="row align-items-center text-center GrayishColor mt-5 p-3" style="border-radius: 5px;">
-        <div class="col-md-12">
-
-            <!-- About Me Title -->
-            <h3 class="mt-2">About Me</h3>
-
-            <!-- Personal Narrative -->
-            <p>
-                I'm <b>passionate</b> about building <b>something from scratch.</b> I've always had the mindset that <b>programming is an art</b>, as you can <b>create something out of nothing</b>, just like an artist.
-                My development journey started when I realized the power of code to <b>transform ideas into reality</b>.
-            </p>
-
-            <!-- Personal Philosophy -->
-            <p>
-                My philosophy is simple: clean code, meaningful impact, and continuous learning. I strive to stay relevant with new technologies and methodologies to create innovative solutions.
-            </p>
-
-            <!-- Skill Bars -->
-            @* <div class="skills mt-4"> *@
-            @*     <h5>Skills</h5> *@
-            @*     <div class="progress"> *@
-            @*         <div class="progress-bar progress-bar-animated progress-bar-striped bg-info" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">C# .NET EF ASP.NET RAZOR/MVC APIs</div> *@
-            @*     </div> *@
-            @*     <div class="progress mt-2"> *@
-            @*         <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" role="progressbar" style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">HTML CSS BOOTSTRAP</div> *@
-            @*     </div> *@
-            @*     <div class="progress mt-2"> *@
-            @*         <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" role="progressbar" style="width: 75%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript Typescript</div> *@
-            @*     </div> *@
-            @*     <div class="progress mt-2"> *@
-            @*         <div class="progress-bar bg-warning progress-bar-animated progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">MSSQL</div> *@
-            @*     </div> *@
-            @*     <div class="progress mt-2"> *@
-            @*         <div class="progress-bar bg-danger progress-bar-animated progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Java / Java Spring</div> *@
-            @*     </div> *@
-            @* </div> *@
-            <div class="skills mt-4">
-                <h5>Skills</h5>
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <span>C# .NET EF ASP.NET RAZOR/MVC APIs</span>
-                        <span class="badge text-success">Expert</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <span>HTML CSS BOOTSTRAP</span>
-                        <span class="badge text-primary">Advanced</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <span>JavaScript Typescript</span>
-                        <span class="badge text-warning">Intermediate</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <span>MSSQL</span>
-                        <span class="badge text-secondary">Basic</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        <span>Java / Java Spring</span>
-                        <span class="badge text-danger">Beginner</span>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Call-to-Action Button -->
-            <div class="mt-4">
-                <a asp-controller="Home" asp-action="CV" class="btn btn-outline-dark btn-lg">View My CV</a>
-            </div>
-        </div>
-    </div>
-    <hr />
-    <!-- Projects -->
-    <div class="row mt-5 p-3" style="background-color: #f0f0f0; border-radius: 5px;">
-        <div class="col-md-10 offset-md-1 align-self-center justify-content-center align-items-center">
-            @* <h3 class="mt-2" style="color: #333; font-weight: bold;">Projects</h3> *@
-            <h2 class="text-start text-dark" style=" font-weight: bold;">My GitHub Repositories</h2>
-            <div class="repositories-container scrollbar" id="scrollbar" style="overflow-y: auto; height: 500px; padding: 10px; background-color: #fff; border: 1px solid #151B23; border-radius: 10px; border-bottom-right-radius:3px; border-top-right-radius:3px;">
-                @foreach (var repository in Model)
-                {
-                    <div class="card" style="margin-bottom: 20px; background-color: #161b22; border: 1px solid #ddd; border-radius: 10px;">
-                        <div class="card-body">
-                            <h3 class="card-title" style="color: #2196F3; font-weight: bold;">@repository.Name</h3>
-                            <p class="card-text" style="color: #666;">@repository.Description</p>
-                            <a href="@repository.HtmlUrl" target="_blank" class="btn" style="color: #74B9FF; border: 1px solid #74B9FF;border-radius: 2px; background-color:#151B23;">View on GitHub</a>
-                        </div>
+            <!-- Image section -->
+            <div class="col-md-4 QvabbyteImageContainer text-center mt-lg-0 " style="align-items:center; display:flex;">
+                <div class="image-container">
+                    <img id="qvabbyteimage" class="rounded-circle" src="media/Qvabbyte/qvabbytefixed.png" />
+                    <div class="d-flex justify-content-center align-items-center ps-1 pe-1 mt-3">
+                        <a class="m-1 IconAnim" href="https://github.com/Qvabby" target="_blank"><img src="media/MediaIcons/GithubIcon.png" alt="GitHub" width="25" height="25" /></a>
+                        <a class="m-1 IconAnim" href="https://stackoverflow.com/users/14074769/qvabby" target="_blank"><img src="media/MediaIcons/StackoverflowIcon.png" alt="StackOverflow" width="25" height="25" / style="margin-top: 0.45px;"></a>
+                        <a class="m-1 IconAnim" href="https://www.linkedin.com/in/saba-salukvadze-634589268/" target="_blank"><img src="media/MediaIcons/LinkedInIcon.png" alt="LinkedIn" width="24" height="24" /></a>
                     </div>
-                }
-            </div>
-        </div>
-        <div class="col-md-12 mt-5">
-            <h1 style="color: #333; font-weight: bold;">My Published Works.</h1>
-            <div class="card" style="margin-bottom: 20px; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 10px;">
-                <div class="card-body">
-                    <h2 class="card-title text-start" style="color: #333; font-weight: bold;">Amo's Service</h2>
-                    <p class="card-text" style="color: #B7BDC8;">I've solo developed this simple website, purpose of this website is just towing and car services.</p>
-                    <a href="https://www.amosservice.ge/" target="_blank" class="btn btn-primary btn-lg" style="background-color: #2196F3; border-color: #2196F3;">View Website</a>
                 </div>
             </div>
+            
         </div>
+
     </div>
-</main>
+
+
+
+
+
+
+    @* <hr /> *@
+    @* <!-- About Me Section --> *@
+    @* <div class="row align-items-center text-center GrayishColor mt-1 p-3" style="border-radius: 5px;"> *@
+    @*     <div class="col-md-12"> *@
+
+    @*         <!-- About Me Title --> *@
+    @*         <h3 class="mt-2">About Me</h3> *@
+
+    @*         <!-- Personal Narrative --> *@
+    @*         <p> *@
+    @*             I'm <b>passionate</b> about building <b>something from scratch.</b> I've always had the mindset that <b>programming is an art</b>, as you can <b>create something out of nothing</b>, just like an artist. *@
+    @*             My development journey started when I realized the power of code to <b>transform ideas into reality</b>. *@
+    @*         </p> *@
+
+    @*         <!-- Personal Philosophy --> *@
+    @*         <p> *@
+    @*             My philosophy is simple: clean code, meaningful impact, and continuous learning. I strive to stay relevant with new technologies and methodologies to create innovative solutions. *@
+    @*         </p> *@
+
+    @*         <!-- Skill Bars --> *@
+    @*         <div class="skills mt-4"> *@
+    @*             <h5>Skills</h5> *@
+    @*             <ul class="list-group"> *@
+    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
+    @*                     <span>C# .NET EF ASP.NET RAZOR/MVC APIs</span> *@
+    @*                     <span class="badge text-success">Expert</span> *@
+    @*                 </li> *@
+    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
+    @*                     <span>HTML CSS BOOTSTRAP</span> *@
+    @*                     <span class="badge text-primary">Advanced</span> *@
+    @*                 </li> *@
+    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
+    @*                     <span>JavaScript Typescript</span> *@
+    @*                     <span class="badge text-warning">Intermediate</span> *@
+    @*                 </li> *@
+    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
+    @*                     <span>MSSQL</span> *@
+    @*                     <span class="badge text-secondary">Basic</span> *@
+    @*                 </li> *@
+    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
+    @*                     <span>Java / Java Spring</span> *@
+    @*                     <span class="badge text-danger">Beginner</span> *@
+    @*                 </li> *@
+    @*             </ul> *@
+    @*         </div> *@
+
+    @*         <!-- Call-to-Action Button --> *@
+    @*         <div class="mt-4"> *@
+    @*             <a asp-controller="Home" asp-action="CV" class="btn btn-outline-dark btn-lg">View My CV</a> *@
+    @*         </div> *@
+    @*     </div> *@
+    @* </div> *@
+    @* <hr /> *@
+    <!-- Projects -->
+    @* <div class="row mt-1" style="background-color: #f0f0f0; border-radius: 5px;"> *@
+    @*     <div class="col-md-12 p-4">  *@
+    @*         <h3 class="mt-2" style="color: #333; font-weight: bold;">Projects</h3>  *@
+    @*         <h2 class="text-start text-dark" style=" font-weight: bold;">My GitHub Repositories</h2>  *@
+    @*         <div class="repositories-container scrollbar" id="scrollbar" style="overflow-y: auto; height: 500px; width:100%; padding: 10px; background-color: #fff; border: 1px solid #151B23; border-radius: 10px; border-bottom-right-radius:3px; border-top-right-radius:3px;">  *@
+    @*             @foreach (var repository in Model)  *@
+    @*             {  *@
+    @*                  <div class="card" style="margin-bottom: 20px; background-color: #161b22; border: 1px solid #ddd; border-radius: 10px;">  *@
+    @*                      <div class="card-body">  *@
+    @*                          <h3 class="card-title" style="color: #2196F3; font-weight: bold;">@repository.Name</h3>  *@
+    @*                          <p class="card-text" style="color: #666;">@repository.Description</p> *@
+    @*                         <a href="@repository.HtmlUrl" target="_blank" class="btn" style="color: #74B9FF; border: 1px solid #74B9FF;border-radius: 2px; background-color:#151B23;">View on GitHub</a> *@
+    @*                      </div> *@
+    @*                  </div> *@
+    @*              } *@
+    @*          </div> *@
+    @*      </div> *@
+    @*     <div class="col-md-12 mt-5 p-4"> *@
+    @*         <h1 style="color: #333; font-weight: bold;">My Published Works.</h1> *@
+    @*         <div class="card" style="margin-bottom: 20px; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 10px;"> *@
+    @*             <div class="card-body"> *@
+    @*                 <h2 class="card-title text-start" style="color: #333; font-weight: bold;">Amo's Service</h2> *@
+    @*                 <p class="card-text" style="color: #B7BDC8;">I've solo developed this simple website, purpose of this website is just towing and car services.</p> *@
+    @*                 <a href="https://www.amosservice.ge/" target="_blank" class="btn btn-primary btn-lg" style="background-color: #2196F3; border-color: #2196F3;">View Website</a> *@
+    @*             </div> *@
+    @*         </div> *@
+    @*     </div> *@
+    @* </div> *@
+
