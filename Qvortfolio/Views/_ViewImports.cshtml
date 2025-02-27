@@ -1,3 +1,16 @@
 ﻿@using Qvortfolio
+@using Microsoft.AspNetCore.Mvc.Razor
 @using Qvortfolio.Models
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@functions {
+
+    public static string IsActive(ViewContext viewContext, string controller, string action)
+    {
+        var routeData = viewContext.RouteData.Values;
+        var currentController = routeData["controller"]?.ToString();
+        var currentAction = routeData["action"]?.ToString();
+
+        return controller == currentController && action == currentAction ? "active" : "";
+    }
+}

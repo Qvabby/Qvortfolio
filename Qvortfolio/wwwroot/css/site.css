@@ -15,6 +15,47 @@ body{
         font-size: 16px;
     }
 }
+.skills-table {
+    width: 99%;
+    
+    border-collapse: collapse;
+}
+.tdonright {
+    text-align: right !important;
+}
+    .skills-table tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+    .skills-table td {
+        text-align:start;
+        padding: 12px;
+        vertical-align: middle;
+    }
+
+.tag {
+    text-align:right;
+/*    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 15px;*/
+    padding: 3px 10px;
+    font-size: 14px;
+    display: inline-block;
+}
+.nav-item.active {
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-position: under;
+    backdrop-filter: blur(10%);
+    transition: 0.3s;
+}
+.nav-item:hover {
+    backdrop-filter: blur(30%);
+    transition: 0.3s;
+}
+.nav-item{
+    transition: 0.3s;
+}
+
 #NavbarBrand{
     display:none;
 }
@@ -184,6 +225,10 @@ h1 {
 
 
 @media(max-width:993px){
+    .changepaddingfortextonabout {
+        padding: 100px!important;
+        padding-top: 100px!important;
+    }
     .letterforqvatext {
         font-size: 3.5rem !important;
     }
@@ -204,6 +249,10 @@ h1 {
     .QvabbyteImageContainer {
         align-items: flex-start!important;
     }
+    .changepaddingfortextonabout {
+        padding: 70px !important;
+        padding-top: 60px !important;
+    }
 }
 @media(max-width:463px){
     .letterforqvatext {
@@ -212,6 +261,11 @@ h1 {
 
     .FULLSTACKDEVELOPER {
         font-size: 2.5rem !important;
+    }
+
+    .changepaddingfortextonabout {
+        padding: 50px !important;
+        padding-top: 20px !important;
     }
 }
 

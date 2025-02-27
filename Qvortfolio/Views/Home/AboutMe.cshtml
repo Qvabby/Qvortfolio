@@ -4,11 +4,11 @@
 }
 
 <!-- About Me Section -->
-<div class="row GrayishColor p-3" style="height:100%; border-radius: 5px; font-family:RobotoFlex!important; font-weight:200; color:#707070; font-size:large">
+<div class="row GrayishColor text-center changepaddingfortextonabout" style="height:100%; border-radius: 5px; font-family:RobotoFlex!important; font-weight:200; color:#707070; font-size:x-large; padding:130px; padding-top:100px;">
     <div class="col-md-12">
 
-        <!-- About Me Title -->
-        <h3 class="mt-3 text-start" style="font-size:xx-large; color:#333333; font-weight:300;">ABOUT ME</h3>
+        @* <!-- About Me Title --> *@
+        @* <h3 class="mt-3 text-start" style="font-size:xx-large; color:#333333; font-weight:300;">ABOUT ME</h3> *@
 
         <!-- Personal Narrative -->
         <p>
@@ -18,39 +18,38 @@
 
         <!-- Personal Philosophy -->
         <p>
-            My philosophy is simple: clean code, meaningful impact, and continuous learning. I strive to stay relevant with new technologies and methodologies to create innovative solutions.
+            My philosophy is simple: <b>clean code</b>, <b>meaningful impact</b>, and <b>continuous learning</b>. I strive to stay relevant with new technologies and methodologies to <b>create innovative solutions</b>.
         </p>
 
+        <h1 class="ps-2 text-start mt-5" style="font-family:RobotoFlex; font-weight:300;margin-top:70px!important; color:#333333;">
+            SKILLS
+        </h1>
         <!-- Skill Bars -->
-        <div class="skills mt-4">
-            <h5 style="font-size:xx-large;color:#333333; font-weight:300;">SKILLS</h5>
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>C# .NET EF ASP.NET RAZOR/MVC APIs</span>
-                    <span class="badge text-success">Expert</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>HTML CSS BOOTSTRAP</span>
-                    <span class="badge text-primary">Advanced</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>JavaScript Typescript</span>
-                    <span class="badge text-warning">Intermediate</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>MSSQL</span>
-                    <span class="badge text-secondary">Basic</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <span>Java / Java Spring</span>
-                    <span class="badge text-danger">Beginner</span>
-                </li>
-            </ul>
-        </div>
+        <table class="skills-table">
+            
+            <tr>
+                <td>C# .NET EF ASP.NET RAZOR/MVC APIs</td>
+                <td class="tdonright"><span class="tag text-success">Expert</span></td>
+            </tr>
+            <tr>
+                <td>HTML CSS BOOTSTRAP</td>
+                <td class="tdonright"><span class="tag text-primary">Advanced</span></td>
+            </tr>
+            <tr>
+                <td>JavaScript TypeScript</td>
+                <td class="tdonright"><span class="tag text-warning">Intermediate</span></td>
+            </tr>
+            <tr>
+                <td>MSSQL</td>
+                <td class="tdonright"><span class="tag text-secondary">Basic</span></td>
+            </tr>
+            <tr>
+                <td>Java / Java Spring</td>
+                <td class="tdonright"><span class="tag text-danger">Beginner</span></td>
+            </tr>
+        </table>
 
-        <!-- Call-to-Action Button -->
-        <div class="mt-4">
-            <a asp-controller="Home" asp-action="CV" class="btn btn-outline-dark btn-lg">View My CV</a>
-        </div>
+
+        
     </div>
 </div>
