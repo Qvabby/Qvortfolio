@@ -1,7 +1,34 @@
 ﻿@{
     ViewData["Title"] = "CV";
 }
-<div class="container mycv">
-    <embed src="/media/Qvabbyte/sesilifixedmycv.pdf" frameborder="0" width="100%" height="700px">
+
+
+
+<div class="mycv GrayishColor" style="height:100%;">
+    <div class="row p-0 m-0" style="width:100%; height:100%;">
+        <div class="col-md-12 mt-3 align-self-center image-container p-0" style="width:100%; height:75%;">
+            @* <embed src="/media/Qvabbyte/sesilifixedmycv.pdf" frameborder="0" width="100%" height="100%"> *@
+            <img class="imagefixresponsive" src="~/media/Qvabbyte/SABA_SALUKVADZE_CV.png" style="object-fit: fill; width:auto;height:100%;" />
+            
+        </div>
+        <div class="col-md-12 text-center mt-1 " style="font-family:RobotoFlex; font-weight:100; height:120px;">
+           
+
+            <div class="dropdown">
+                <button class="dropbtn">DOWNLOAD CV</button>
+                <div class="row">
+                    <div class="dropdown-content">
+                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.pdf">PDF</a>
+                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.png">PNG</a>
+                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.jpg">JPG</a>
+                    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+    
 </div>
 <img class="mycv2" src="~/media/Qvabbyte/SABA_SALUKVADZE_CV.png" width="100%" height="auto"/>
