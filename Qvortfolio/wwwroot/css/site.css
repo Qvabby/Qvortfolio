@@ -18,6 +18,16 @@ body {
         font-size: 16px;
     }
 }
+/*@media (min-height: 870px) {
+    .changepaddingfortextonabout {
+        overflow: scroll!important;
+    }
+}
+@media (min-width: 600px) {
+    .changepaddingfortextonabout {
+        overflow: scroll!important;
+    }
+}*/
 
 
 
@@ -77,7 +87,18 @@ body {
 
 
 
-
+.repname {
+    font-family: RobotoFlex;
+    font-size: 1.5rem;
+    color: #333333;
+    text-decoration:none;
+        font-weight:300;
+}
+.repdescription {
+    font-family: RobotoFlex;
+    font-weight:200;
+    
+}
 
 
 
