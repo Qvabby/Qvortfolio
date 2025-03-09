@@ -110,12 +110,19 @@ body {
     display: inline-block;
 
 }
-
-
-
-
-
-
+.contactfont {
+    text-decoration:none;
+    font-family: RobotoFlex;
+    font-size: 1.5rem;
+    color: dimgray;
+    font-weight:150;
+}
+.acursor {
+    text-decoration: none;  
+}
+.acursor:hover{
+    cursor:pointer;
+}
 /* Dropdown Button */
 .dropbtn {
     background-color: #4A4949;

@@ -57,6 +57,10 @@ namespace Qvortfolio.Controllers
         {
             return View();
         }
+        public IActionResult Contact()
+        {
+            return View();
+        }
         public async Task<IActionResult> GithubRepositories()
         {
             var configuration = new ConfigurationBuilder()
