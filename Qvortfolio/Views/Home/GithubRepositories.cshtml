@@ -3,15 +3,15 @@
     ViewData["Title"] = "GITHUB";
 }
 <div class="row GrayishColor p-0 m-0" style="background-color: #f0f0f0; border-radius: 5px; width:100%; height:100%;">
-    <div class="col-md-12 align-self-center h-50">
+    <div class="col-md-12 align-self-center h-75">
         <div class="p-3" style="height:100%;">
         <table class="skills-table h-75 ">
-            <tbody class="d-flex m-0 flex-wrap flex-column overflow-scroll overflow-visible h-100">
+            <tbody class="d-flex m-0 flex-wrap flex-column overflow-scroll overflow-visible h-100 p-2">
 
 
                     @foreach (var repository in Model)
                     {
-                    <tr style="" class="d-flex justify-content-between h-25">
+                    <tr style="" class="d-flex justify-content-between h-25 p-2 border-2 border-bottom-0 border-start-0 border-top-0">
                         <td class="p-1"><a class="repname" target="_blank" href="@repository.HtmlUrl">@repository.Name</a></td>
                         <td class="tdonright repdescription"><span class="tag">@repository.Description</span></td>
                     </tr>

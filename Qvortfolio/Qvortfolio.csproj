@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\media\Fonts\" />
+    <Folder Include="wwwroot\media\PublishedWork\AmosService\" />
   </ItemGroup>
 
 </Project>

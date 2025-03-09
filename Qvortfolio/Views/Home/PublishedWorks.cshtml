@@ -2,14 +2,40 @@
     ViewData["Title"] = "WORKS";
 }
 
-<div class="row " style="background-color: #f0f0f0; border-radius: 5px;">
-    <div class="col-md-12 mt-5 p-4">
-        <h1 style="color: #333; font-weight: bold;">My Published Works.</h1>
+<div class="row" style="background-color: #f0f0f0; border-radius: 5px;">
+    <div class="col-md-12 row mt-2">
         <div class="card" style="margin-bottom: 20px; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 10px;">
-            <div class="card-body">
-                <h2 class="card-title text-start" style="color: #333; font-weight: bold;">Amo's Service</h2>
-                <p class="card-text" style="color: #B7BDC8;">I've solo developed this simple website, purpose of this website is just towing and car services.</p>
-                <a href="https://www.amosservice.ge/" target="_blank" class="btn btn-primary btn-lg" style="background-color: #2196F3; border-color: #2196F3;">View Website</a>
+            <div class="card-body col-md-3 border">
+                <h2 class="card-title text-start" style="font-family:RobotoFlex; font-weight:300;">Amo's Service</h2>
+                <p class="card-text" style="font-family:RobotoFlex; font-weight:200;">I've solo developed this simple website, purpose of this website is just towing and car services.</p>
+
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides">
+                        <img src="/media/PublishedWork/AmosService/AboutPageOfAmosService.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="/media/PublishedWork/AmosService/IndexPageOfAmosService.png" style="width:100%">
+                    </div>
+
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+
+
+                <a href="https://www.amosservice.ge/" target="_blank" class="btn btn-outline-dark btn-lg" style="font-family:RobotoFlex; font-weight:300;">View Website</a>
             </div>
         </div>
     </div>
