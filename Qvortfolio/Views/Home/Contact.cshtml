@@ -1,13 +1,56 @@
-﻿
 @{
     ViewData["Title"] = "Contact";
 }
 
-<div class="row h-100">
-    <div class="col-md-12 p-5 text-center" style="">
-        <h2 style=" font-weight:300;">Feel free to contact me for any questions or job opportunities.</h2>
-        <a class="acursor contactfont" style=" font-weight:100;" onclick="window.open('tel:599022908');">Number: +995 599 02 29 08</a>
-        <p class="contactfont">E-Mail: saluqvadze2006@gmail.com</p>
-    </div>
-</div>
+<div class="page">
+    <section class="section">
+        <div class="shell">
+            <div class="eyebrow"><span class="idx">01</span><span>Contact</span></div>
 
+            <h1 class="contact__big reveal">Let&rsquo;s<br />build it.</h1>
+
+            <p class="lede reveal" data-delay="0.08" style="margin-top:2rem;">
+                Questions, freelance work or a full-time role &mdash; either line below reaches me
+                directly. I answer fast.
+            </p>
+
+            <div style="margin-top:clamp(2.5rem,5vw,4rem);">
+                <a class="clink reveal" href="mailto:saluqvadze2006@gmail.com">
+                    <span class="clink__k">Email</span>
+                    <span class="clink__v">saluqvadze2006@gmail.com</span>
+                    <span class="clink__go">&rarr;</span>
+                </a>
+
+                <a class="clink reveal" data-delay="0.06" href="tel:+995599022908">
+                    <span class="clink__k">Phone</span>
+                    <span class="clink__v">+995 599 02 29 08</span>
+                    <span class="clink__go">&rarr;</span>
+                </a>
+
+                <a class="clink reveal" data-delay="0.12" href="https://www.linkedin.com/in/saba-salukvadze-634589268/" target="_blank" rel="noopener">
+                    <span class="clink__k">LinkedIn</span>
+                    <span class="clink__v">saba-salukvadze</span>
+                    <span class="clink__go">&rarr;</span>
+                </a>
+
+                <a class="clink reveal" data-delay="0.18" href="https://github.com/Qvabby" target="_blank" rel="noopener">
+                    <span class="clink__k">Github</span>
+                    <span class="clink__v">@@Qvabby</span>
+                    <span class="clink__go">&rarr;</span>
+                </a>
+
+                <a class="clink reveal" data-delay="0.24" href="https://stackoverflow.com/users/14074769/qvabby" target="_blank" rel="noopener">
+                    <span class="clink__k">Stack Overflow</span>
+                    <span class="clink__v">qvabby</span>
+                    <span class="clink__go">&rarr;</span>
+                </a>
+            </div>
+
+            <div class="reveal" data-delay="0.3" style="margin-top:3rem;">
+                <a class="btn btn--signal" asp-controller="Home" asp-action="CV">
+                    <span>Download my CV</span><span class="btn__arrow">&darr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>

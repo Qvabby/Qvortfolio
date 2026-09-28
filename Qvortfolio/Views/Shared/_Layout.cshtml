@@ -1,76 +1,85 @@
-﻿@using Qvortfolio.Helpers
+@using Qvortfolio.Helpers
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Saba Salukvadze</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <meta name="theme-color" content="#0b0b0c" />
+    <title>@ViewData["Title"] — Saba Salukvadze</title>
+    <meta name="description" content="Saba Salukvadze — full-stack developer. C#/.NET, ASP.NET MVC, JavaScript. Portfolio, CV and selected work." />
+
+    <link rel="icon" href="~/favicon.ico" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Qvortfolio.styles.css" asp-append-version="true" />
-    <link href="media/Qvabbyte/New CV.png" rel="stylesheet"> 
-    <meta property="og:title" content="Qvabbyte"/>
-    <meta property="og:image" content="media/Qvabbyte/New CV.png"/>
-    <meta property="og:description" content="Fullstack Developer Portfolio "/>
-    <meta property="og:url" content="http://qvabit-001-site1.ptempurl.com/"/>
+
+    <meta property="og:title" content="Saba Salukvadze — Full-Stack Developer" />
+    <meta property="og:image" content="media/Qvabbyte/SABA_SALUKVADZE_CV.png" />
+    <meta property="og:description" content="Full-stack developer portfolio." />
+    <meta property="og:url" content="http://qvabit-001-site1.ptempurl.com/" />
     <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="627"/>
-    <meta property="og:type" content="website"/> 
+    <meta property="og:image:height" content="627" />
+    <meta property="og:type" content="website" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow ">
-            <div class="container-fluid">
-                <a class="navbar-brand" id="NavbarBrand" asp-area="" asp-controller="Home" asp-action="Index">Portfolio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between align-items-center">
-                    <ul class="navbar-nav flex-grow-1 justify-content-around ullistebii d-flex" style="font-family:RobotoFlex; font-size:medium; font-weight:100;">
-                        <li class="nav-item @(NavigationHelper.IsActive(ViewContext, "Home", "Index"))">
-                            <a id="noneedanymore" class="nav-link text-dark navitemcss" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
-                        </li>
-                        <li class="nav-item @(NavigationHelper.IsActive(ViewContext, "Home", "AboutMe"))">
-                            <a class="nav-link text-dark navitemcss" asp-area="" asp-controller="Home" asp-action="AboutMe">ABOUT ME</a>
-                        </li>
-                        <li class="nav-item @(NavigationHelper.IsActive(ViewContext, "Home", "CV"))">
-                            <a class="nav-link text-dark navitemcss" asp-area="" asp-controller="Home" asp-action="CV">CV</a>
-                        </li>
-                        <li class="nav-item @(NavigationHelper.IsActive(ViewContext, "Home", "GithubRepositories"))">
-                            <a class="nav-link text-dark navitemcss" asp-area="" asp-controller="Home" asp-action="GithubRepositories">GITHUB</a>
-                        </li>
-                        <li class="nav-item @(NavigationHelper.IsActive(ViewContext, "Home", "PublishedWorks"))">
-                            <a class="nav-link text-dark navitemcss" asp-area="" asp-controller="Home" asp-action="PublishedWorks">PROJECTS</a>
-                        </li>
-                        <li class="nav-item @(NavigationHelper.IsActive(ViewContext, "Home", "Contact"))">
-                            <a class="nav-link text-dark navitemcss" asp-area="" asp-controller="Home" asp-action="Contact">CONTACT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <div class="wipe" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="nav">
+        <div class="nav__inner">
+            <a class="brand" asp-area="" asp-controller="Home" asp-action="Index">
+                <span class="brand__dot"></span>
+                <span>Saba Salukvadze</span>
+                <span class="brand__sub">/ dev</span>
+            </a>
+
+            <nav>
+                <ul class="menu" id="menu">
+                    <li class="@(NavigationHelper.IsActive(ViewContext, "Home", "Index"))">
+                        <a asp-area="" asp-controller="Home" asp-action="Index" data-scramble>Index</a>
+                    </li>
+                    <li class="@(NavigationHelper.IsActive(ViewContext, "Home", "AboutMe"))">
+                        <a asp-area="" asp-controller="Home" asp-action="AboutMe" data-scramble>About</a>
+                    </li>
+                    <li class="@(NavigationHelper.IsActive(ViewContext, "Home", "CV"))">
+                        <a asp-area="" asp-controller="Home" asp-action="CV" data-scramble>CV</a>
+                    </li>
+                    <li class="@(NavigationHelper.IsActive(ViewContext, "Home", "GithubRepositories"))">
+                        <a asp-area="" asp-controller="Home" asp-action="GithubRepositories" data-scramble>Github</a>
+                    </li>
+                    <li class="@(NavigationHelper.IsActive(ViewContext, "Home", "PublishedWorks"))">
+                        <a asp-area="" asp-controller="Home" asp-action="PublishedWorks" data-scramble>Work</a>
+                    </li>
+                    <li class="@(NavigationHelper.IsActive(ViewContext, "Home", "Contact"))">
+                        <a asp-area="" asp-controller="Home" asp-action="Contact" data-scramble>Contact</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="burger" type="button" aria-label="Toggle menu" aria-controls="menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
-    <div class="container-fluid p-0" style="height:100%;">
-        <main role="main" style="height:100%;">
-            @RenderBody()
-        </main>
-    </div>
 
-    @* <footer class="border-top footer text-muted"> *@
-    @*     <div class="container"> *@
-    @*         <div class="row"> *@
-    @*             <div class="col-md-6"> *@
-    @*                 &copy; 2024 - Qvortfolio@*  - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a> *@
-    @*             </div> *@
+    <main role="main">
+        @RenderBody()
+    </main>
 
-    @*         </div> *@
-
-    @*     </div> *@
-    @* </footer> *@
-
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <div class="shell">
+            <div class="foot">
+                <span>&copy; @DateTime.Now.Year Saba Salukvadze</span>
+                <div class="foot__links">
+                    <a href="https://github.com/Qvabby" target="_blank" rel="noopener">Github</a>
+                    <a href="https://stackoverflow.com/users/14074769/qvabby" target="_blank" rel="noopener">Stack Overflow</a>
+                    <a href="https://www.linkedin.com/in/saba-salukvadze-634589268/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:saluqvadze2006@gmail.com">Email</a>
+                </div>
+                <span>Tbilisi, GE</span>
+            </div>
+        </div>
+    </footer>
 
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)

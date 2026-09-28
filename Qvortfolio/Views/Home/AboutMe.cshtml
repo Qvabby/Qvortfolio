@@ -1,55 +1,101 @@
-﻿
 @{
-    ViewData["Title"] = "AboutMe";
+    ViewData["Title"] = "About";
 }
 
-<!-- About Me Section -->
-<div class="row GrayishColor text-center changepaddingfortextonabout m-0" style="overflow-y:auto; height:100%; border-radius: 5px; font-family:RobotoFlex!important; font-weight:200; color:#707070; font-size:x-large; padding:100px; padding-top:80px;">
-    <div class="col-md-12">
+<div class="page">
+    <section class="section">
+        <div class="shell">
+            <div class="eyebrow"><span class="idx">01</span><span>About</span></div>
 
-        @* <!-- About Me Title --> *@
-        @* <h3 class="mt-3 text-start" style="font-size:xx-large; color:#333333; font-weight:300;">ABOUT ME</h3> *@
+            <h1 class="h-xl reveal">Programming<br />is an art.</h1>
 
-        <!-- Personal Narrative -->
-        <p>
-            I'm <b>passionate</b> about building <b>something from scratch.</b> I've always had the mindset that <b>programming is an art</b>, as you can <b>create something out of nothing</b>, just like an artist.
-            My development journey started when I realized the power of code to <b>transform ideas into reality</b>.
-        </p>
+            <div class="reveal" data-delay="0.1" style="margin-top:clamp(2rem,4vw,3.5rem); display:grid; grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr)); gap:clamp(1.5rem,4vw,3.5rem);">
+                <p class="lede">
+                    I&rsquo;m <b>passionate</b> about building <b>something from scratch</b>. I&rsquo;ve always had
+                    the mindset that <b>programming is an art</b> &mdash; you can create something out of
+                    nothing, just like an artist. My journey started the moment I realised code could
+                    <b>turn ideas into real things</b>.
+                </p>
+                <p class="lede">
+                    My philosophy is simple: <b>clean code</b>, <b>meaningful impact</b>, and
+                    <b>continuous learning</b>. I keep up with new technologies and methods so the
+                    solutions I ship stay relevant instead of merely working.
+                </p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Personal Philosophy -->
-        <p>
-            My philosophy is simple: <b>clean code</b>, <b>meaningful impact</b>, and <b>continuous learning</b>. I strive to stay relevant with new technologies and methodologies to <b>create innovative solutions</b>.
-        </p>
+    <section class="section">
+        <div class="shell">
+            <div class="eyebrow"><span class="idx">02</span><span>Skills</span></div>
 
-        <h1 class="ps-2 text-start mt-5" style="font-family:RobotoFlex; font-weight:300;margin-top:70px!important; color:#333333;">
-            SKILLS
-        </h1>
-        <!-- Skill Bars -->
-        <table class="skills-table">
-            
-            <tr>
-                <td>C# .NET EF ASP.NET RAZOR/MVC APIs</td>
-                <td class="tdonright"><span class="tag text-success">Expert</span></td>
-            </tr>
-            <tr>
-                <td>HTML CSS BOOTSTRAP</td>
-                <td class="tdonright"><span class="tag text-primary">Advanced</span></td>
-            </tr>
-            <tr>
-                <td>JavaScript TypeScript</td>
-                <td class="tdonright"><span class="tag text-warning">Intermediate</span></td>
-            </tr>
-            <tr>
-                <td>MSSQL</td>
-                <td class="tdonright"><span class="tag text-secondary">Basic</span></td>
-            </tr>
-            <tr>
-                <td>Java / Java Spring</td>
-                <td class="tdonright"><span class="tag text-danger">Beginner</span></td>
-            </tr>
-        </table>
+            <div class="skills">
 
+                <div class="skill reveal">
+                    <span class="skill__no">01</span>
+                    <span class="skill__name">C# &middot; .NET &middot; EF &middot; ASP.NET &middot; Razor/MVC &middot; APIs</span>
+                    <span class="skill__lvl">
+                        <span class="pips">
+                            <i class="pip on"></i><i class="pip on"></i><i class="pip on"></i><i class="pip on"></i><i class="pip on"></i>
+                        </span>
+                        Expert
+                    </span>
+                </div>
 
-        
-    </div>
+                <div class="skill reveal" data-delay="0.06">
+                    <span class="skill__no">02</span>
+                    <span class="skill__name">HTML &middot; CSS &middot; Bootstrap</span>
+                    <span class="skill__lvl">
+                        <span class="pips">
+                            <i class="pip on"></i><i class="pip on"></i><i class="pip on"></i><i class="pip on"></i><i class="pip"></i>
+                        </span>
+                        Advanced
+                    </span>
+                </div>
+
+                <div class="skill reveal" data-delay="0.12">
+                    <span class="skill__no">03</span>
+                    <span class="skill__name">JavaScript &middot; TypeScript</span>
+                    <span class="skill__lvl">
+                        <span class="pips">
+                            <i class="pip on"></i><i class="pip on"></i><i class="pip on"></i><i class="pip"></i><i class="pip"></i>
+                        </span>
+                        Intermediate
+                    </span>
+                </div>
+
+                <div class="skill reveal" data-delay="0.18">
+                    <span class="skill__no">04</span>
+                    <span class="skill__name">MSSQL</span>
+                    <span class="skill__lvl">
+                        <span class="pips">
+                            <i class="pip on"></i><i class="pip on"></i><i class="pip"></i><i class="pip"></i><i class="pip"></i>
+                        </span>
+                        Basic
+                    </span>
+                </div>
+
+                <div class="skill reveal" data-delay="0.24">
+                    <span class="skill__no">05</span>
+                    <span class="skill__name">Java &middot; Java Spring</span>
+                    <span class="skill__lvl">
+                        <span class="pips">
+                            <i class="pip on"></i><i class="pip"></i><i class="pip"></i><i class="pip"></i><i class="pip"></i>
+                        </span>
+                        Beginner
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="reveal" style="margin-top:3rem; display:flex; flex-wrap:wrap; gap:0.6rem;">
+                <a class="btn" asp-controller="Home" asp-action="CV">
+                    <span>Full CV</span><span class="btn__arrow">&rarr;</span>
+                </a>
+                <a class="btn btn--signal" asp-controller="Home" asp-action="Contact">
+                    <span>Hire me</span><span class="btn__arrow">&rarr;</span>
+                </a>
+            </div>
+        </div>
+    </section>
 </div>

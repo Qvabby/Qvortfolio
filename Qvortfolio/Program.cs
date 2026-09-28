@@ -14,16 +14,20 @@ namespace Qvortfolio
             builder.Services.AddControllersWithViews();
 
 
-            var configuration = new ConfigurationBuilder()
-   .SetBasePath(Directory.GetCurrentDirectory())
-   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-   .Build();
             builder.Services.AddTransient<IGitHubClient>(provider =>
             {
-                var configuration = provider.GetService<IConfiguration>();
+                var configuration = provider.GetRequiredService<IConfiguration>();
                 var client = new GitHubClient(new ProductHeaderValue("Qvortfolio"));
-                var basicAuth = new Credentials(configuration["GitHub:Username"], configuration["Github:Password"]);
-                client.Credentials = basicAuth;
+
+                // A token is optional: public repositories are readable anonymously,
+                // it only raises the rate limit. Supply it via user-secrets or the
+                // GitHub__Token environment variable, never in appsettings.json.
+                var token = configuration["GitHub:Token"];
+                if (!string.IsNullOrWhiteSpace(token))
+                {
+                    client.Credentials = new Credentials(token);
+                }
+
                 return client;
             });
 

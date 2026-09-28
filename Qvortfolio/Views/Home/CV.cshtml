@@ -1,34 +1,72 @@
-﻿@{
+@{
     ViewData["Title"] = "CV";
 }
 
+<div class="page">
+    <section class="section">
+        <div class="shell">
+            <div class="eyebrow"><span class="idx">01</span><span>Curriculum vitae</span></div>
 
+            <div class="cv">
 
-<div class="mycv GrayishColor" style="height:100%;">
-    <div class="row p-0 m-0" style="width:100%; height:100%;">
-        <div class="col-md-12 mt-3 align-self-center image-container p-0" style="width:100%; height:75%;">
-            @* <embed src="/media/Qvabbyte/sesilifixedmycv.pdf" frameborder="0" width="100%" height="100%"> *@
-            <img class="imagefixresponsive" src="~/media/Qvabbyte/SABA_SALUKVADZE_CV.png" style="object-fit: fill; width:auto;height:100%;" />
-            
-        </div>
-        <div class="col-md-12 text-center mt-1 " style="font-family:RobotoFlex; font-weight:100; height:120px;">
-           
+                <div class="cv__sheet reveal">
+                    <img src="~/media/Qvabbyte/SABA_SALUKVADZE_CV.png" alt="CV of Saba Salukvadze" />
+                </div>
 
-            <div class="dropdown">
-                <button class="dropbtn">DOWNLOAD CV</button>
-                <div class="row">
-                    <div class="dropdown-content">
-                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.pdf">PDF</a>
-                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.png">PNG</a>
-                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.jpg">JPG</a>
+                <div class="reveal" data-delay="0.1">
+                    <h1 class="h-lg">Saba Salukvadze</h1>
+
+                    <p class="lede" style="margin-top:1.4rem;">
+                        Full-stack developer working mainly in <b>C# / .NET</b> &mdash; ASP.NET MVC,
+                        Entity Framework and REST APIs on the back end, HTML/CSS/JS on the front.
+                        The sheet on the left is the same document you can download below.
+                    </p>
+
+                    <div class="timeline">
+                        <div class="tl">
+                            <div class="tl__when">Role</div>
+                            <div>
+                                <div class="tl__what">Full-Stack Developer</div>
+                                <p class="tl__note">Back end first, front end by necessity and by choice.</p>
+                            </div>
+                        </div>
+                        <div class="tl">
+                            <div class="tl__when">Core</div>
+                            <div>
+                                <div class="tl__what">C# &middot; .NET &middot; EF &middot; ASP.NET MVC</div>
+                                <p class="tl__note">APIs, Razor views, relational data with MSSQL.</p>
+                            </div>
+                        </div>
+                        <div class="tl">
+                            <div class="tl__when">Also</div>
+                            <div>
+                                <div class="tl__what">JavaScript &middot; TypeScript &middot; Java Spring</div>
+                                <p class="tl__note">Used where the project called for it.</p>
+                            </div>
+                        </div>
+                        <div class="tl">
+                            <div class="tl__when">Based</div>
+                            <div>
+                                <div class="tl__what">Tbilisi, Georgia</div>
+                                <p class="tl__note">Open to remote work and relocation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dl">
+                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.pdf">
+                            <span>PDF</span><span>&darr;</span>
+                        </a>
+                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.png">
+                            <span>PNG</span><span>&darr;</span>
+                        </a>
+                        <a download="SABA_SALUKVADZE_CV" href="/media/Qvabbyte/SABA_SALUKVADZE_CV.jpg">
+                            <span>JPG</span><span>&darr;</span>
+                        </a>
                     </div>
                 </div>
-                
+
             </div>
-
-
         </div>
-    </div>
-    
+    </section>
 </div>
-<img class="mycv2" src="~/media/Qvabbyte/SABA_SALUKVADZE_CV.png" width="100%" height="auto"/>

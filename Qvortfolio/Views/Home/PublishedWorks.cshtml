@@ -1,42 +1,237 @@
-﻿@{
-    ViewData["Title"] = "WORKS";
+@{
+    ViewData["Title"] = "Work";
 }
 
-<div class="row" style="background-color: #f0f0f0; border-radius: 5px;">
-    <div class="col-md-12 row mt-2">
-        <div class="card" style="margin-bottom: 20px; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 10px;">
-            <div class="card-body col-md-3 border">
-                <h2 class="card-title text-start" style="font-family:RobotoFlex; font-weight:300;">Amo's Service</h2>
-                <p class="card-text" style="font-family:RobotoFlex; font-weight:200;">I've solo developed this simple website, purpose of this website is just towing and car services.</p>
+<div class="page">
+    <section class="section">
+        <div class="shell">
+            <div class="eyebrow"><span class="idx">01</span><span>Published works</span></div>
 
+            <h1 class="h-xl reveal">Shipped<br />and live.</h1>
+        </div>
+    </section>
 
-                <!-- Slideshow container -->
-                <div class="slideshow-container">
+    <!-- ============ 001 — STONEAGE ============ -->
+    <section class="section">
+        <div class="shell">
 
-                    <!-- Full-width images with number and caption text -->
-                    <div class="mySlides">
-                        <img src="/media/PublishedWork/AmosService/AboutPageOfAmosService.png" style="width:100%">
+            <div class="flag reveal">
+
+                <div class="flag__head">
+                    <div>
+                        <div class="card__no" style="margin-bottom:0.9rem;">001 &mdash; wearstoneage.com</div>
+                        <h2 class="flag__title">Stone<span class="ghost">Age</span></h2>
                     </div>
-
-                    <div class="mySlides">
-                        <img src="/media/PublishedWork/AmosService/IndexPageOfAmosService.png" style="width:100%">
-                    </div>
-
-                    <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                </div>
-                <br>
-
-                <!-- The dots/circles -->
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="badge badge--live"><span class="badge__dot"></span>Live &mdash; demo preview</span>
                 </div>
 
+                <div class="flag__body">
 
-                <a href="https://www.amosservice.ge/" target="_blank" class="btn btn-outline-dark btn-lg" style="font-family:RobotoFlex; font-weight:300;">View Website</a>
+                    <div>
+                        <p class="lede">
+                            A streetwear brand and the <b>full storefront behind it</b>. Not a template shop &mdash;
+                            it carries a <b>custom tee builder</b>, an <b>XP loyalty system</b> that feeds
+                            <b>giveaways</b>, accounts, an admin back office and a <b>bilingual</b> front end.
+                            Currently in demo preview: you can browse and build, ordering opens later.
+                        </p>
+
+                        <div class="specs">
+                            <div class="spec">
+                                <div class="spec__k">Stack</div>
+                                <div class="spec__v">ASP.NET Core 8 MVC</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec__k">Data</div>
+                                <div class="spec__v">EF Core &middot; SQL Server</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec__k">Auth</div>
+                                <div class="spec__v">ASP.NET Identity</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec__k">Imaging</div>
+                                <div class="spec__v">ImageSharp</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec__k">Languages</div>
+                                <div class="spec__v">EN &middot; ქართული</div>
+                            </div>
+                            <div class="spec">
+                                <div class="spec__k">Currency</div>
+                                <div class="spec__v">GEL &#8382;</div>
+                            </div>
+                        </div>
+
+                        <div class="chips">
+                            <span class="chip">C#</span>
+                            <span class="chip">Razor / MVC</span>
+                            <span class="chip">Entity Framework</span>
+                            <span class="chip">Identity</span>
+                            <span class="chip">Localization</span>
+                            <span class="chip">File uploads</span>
+                            <span class="chip">Admin panel</span>
+                        </div>
+
+                        <a class="btn btn--signal" href="https://wearstoneage.com" target="_blank" rel="noopener">
+                            <span>Visit wearstoneage.com</span><span class="btn__arrow">&rarr;</span>
+                        </a>
+                    </div>
+
+                    <div class="markbox">
+                        <img src="~/media/PublishedWork/StoneAge/stoneage-mark.png" alt="StoneAge mark" />
+                    </div>
+
+                </div>
+
+                <div class="feats" style="margin-top:clamp(2rem,4vw,3rem);">
+
+                    <div class="feat">
+                        <span class="feat__no">01</span>
+                        <div>
+                            <div class="feat__h">Build your own tee</div>
+                            <p class="feat__p">
+                                Design straight onto the shirt or upload a reference. Shirt colour and size,
+                                front or back placement, and six print sizes from 5&times;5 up to 30&times;20&nbsp;cm.
+                                Artwork is composited server-side with ImageSharp, so the preview matches the print.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feat">
+                        <span class="feat__no">02</span>
+                        <div>
+                            <div class="feat__h">XP levels feeding live giveaways</div>
+                            <p class="feat__p">
+                                Lifetime spend levels the account up. Hitting level&nbsp;1 puts you in the draw and
+                                every level above that holds more tickets. Giveaways run on a live countdown with
+                                per-level entry gates &mdash; loyalty and prizes are one system, not two.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feat">
+                        <span class="feat__no">03</span>
+                        <div>
+                            <div class="feat__h">Accounts, wishlist and discussions</div>
+                            <p class="feat__p">
+                                ASP.NET Identity handles registration and sign-in, with notifications, a wishlist,
+                                and per-product discussion threads on top. A separate admin area covers users,
+                                products, site content and promotions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feat">
+                        <span class="feat__no">04</span>
+                        <div>
+                            <div class="feat__h">Bilingual by design</div>
+                            <p class="feat__p">
+                                English and Georgian throughout, switched at runtime via resource files &mdash;
+                                including Identity&rsquo;s own validation messages, which are localized rather
+                                than left in English.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feat">
+                        <span class="feat__no">05</span>
+                        <div>
+                            <div class="feat__h">Uploads that can&rsquo;t bite</div>
+                            <p class="feat__p">
+                                Customer artwork is validated, malware-scanned through Windows Defender, and stored
+                                in private storage outside the web root. Nothing a stranger uploads is ever served
+                                straight back off disk.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feat">
+                        <span class="feat__no">06</span>
+                        <div>
+                            <div class="feat__h">Demo mode as a first-class switch</div>
+                            <p class="feat__p">
+                                A production-readiness flag hides pricing and disables ordering while the brand is
+                                pre-launch, so the whole site can be shown off publicly without taking a single order
+                                by accident.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ 002 — AMO'S SERVICE ============ -->
+    <section class="section">
+        <div class="shell">
+
+            <article class="work reveal">
+                <div>
+                    <div class="card__no">002 &mdash; amosservice.ge</div>
+                    <h2 class="work__title">Amo&rsquo;s<br />Service</h2>
+
+                    <p class="lede">
+                        A towing and car-services website, <b>solo developed end to end</b> &mdash;
+                        layout, front end, back end and deployment. Built to do one job well:
+                        let a stranded driver find help fast.
+                    </p>
+
+                    <div class="chips">
+                        <span class="chip">ASP.NET</span>
+                        <span class="chip">C#</span>
+                        <span class="chip">HTML / CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Solo build</span>
+                    </div>
+
+                    <a class="btn" href="https://www.amosservice.ge/" target="_blank" rel="noopener">
+                        <span>View website</span><span class="btn__arrow">&rarr;</span>
+                    </a>
+                </div>
+
+                <div class="shot" data-slideshow>
+                    <div class="shot__stage">
+                        <div class="slide on">
+                            <img src="/media/PublishedWork/AmosService/IndexPageOfAmosService.png" alt="Amo's Service — home page" />
+                        </div>
+                        <div class="slide">
+                            <img src="/media/PublishedWork/AmosService/AboutPageOfAmosService.png" alt="Amo's Service — about page" />
+                        </div>
+                    </div>
+
+                    <div class="shot__bar">
+                        <div class="dots">
+                            <span class="dot on"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <span data-slide-count>1 / 2</span>
+                        <div class="arrows">
+                            <button type="button" data-slide-prev aria-label="Previous screenshot">&#8249;</button>
+                            <button type="button" data-slide-next aria-label="Next screenshot">&#8250;</button>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="shell">
+            <div class="eyebrow"><span class="idx">03</span><span>More</span></div>
+
+            <p class="lede reveal">
+                Everything else I write in the open lives on Github &mdash; side projects,
+                experiments and the unglamorous utilities that actually get used.
+            </p>
+
+            <div class="reveal" data-delay="0.1" style="margin-top:2.4rem;">
+                <a class="btn btn--signal" asp-controller="Home" asp-action="GithubRepositories">
+                    <span>Browse repositories</span><span class="btn__arrow">&rarr;</span>
+                </a>
             </div>
         </div>
-    </div>
+    </section>
 </div>

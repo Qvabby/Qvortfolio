@@ -63,22 +63,26 @@ namespace Qvortfolio.Controllers
         }
         public async Task<IActionResult> GithubRepositories()
         {
-            var configuration = new ConfigurationBuilder()
-   .SetBasePath(Directory.GetCurrentDirectory())
-   .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-   .Build();
-            var client = new GitHubClient(new ProductHeaderValue("Qvortfolio"));
-            var basicAuth = new Credentials(configuration["GitHub:Username"], configuration["Github:Password"]);
-            client.Credentials = basicAuth;
-            //getting user repositories.
-            var repositories = await client.Repository.GetAllForUser("Qvabby");
-            //turning them into viewmodels
-            var repositoryModels = repositories.Select(r => new GithubRepositoryViewModel
+            var repositoryModels = new List<GithubRepositoryViewModel>();
+
+            try
             {
-                Name = r.Name,
-                Description = r.Description,
-                HtmlUrl = r.HtmlUrl
-            }).ToList();
+                //getting user repositories.
+                var repositories = await _githubClient.Repository.GetAllForUser("Qvabby");
+                //turning them into viewmodels
+                repositoryModels = repositories.Select(r => new GithubRepositoryViewModel
+                {
+                    Name = r.Name,
+                    Description = r.Description,
+                    HtmlUrl = r.HtmlUrl
+                }).ToList();
+            }
+            catch (Exception ex)
+            {
+                // The page still renders (empty state) if GitHub is down or rate-limits us.
+                _logger.LogError(ex, "Could not load GitHub repositories.");
+            }
+
             return View(repositoryModels);
         }
     }

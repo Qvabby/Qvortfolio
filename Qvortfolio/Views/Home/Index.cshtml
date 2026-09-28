@@ -1,135 +1,152 @@
-﻿@model List<GithubRepositoryViewModel>
 @{
-    ViewData["Title"] = "Portfolio";
+    ViewData["Title"] = "Index";
 }
 
-<div class="row HeadTry text-center GrayishColor m-0 justify-content-around" style="height:100%;">
-    <div class="col-md-12 row" style="height:100%;padding-left: 15px;">
-            <!-- Qvab section -->
-            <div class="col-md-8 text-center flex-column justify-content-center position-relative CHAETRIEDABLA" style="display:flex;">
-                <div id="qvabbytetext" class="display-4">
-                    <div class="letterforqvatext">S</div>
-                    <div class="letterforqvatext">A</div>
-                    <div class="letterforqvatext">B</div>
-                    <div class="letterforqvatext">A </div>
-                <div class="letterforqvatext">‎ ‎  </div>
-                    <div class="letterforqvatext"> S</div>
-                    <div class="letterforqvatext">A</div>
-                    <div class="letterforqvatext">L</div>
-                    <div class="letterforqvatext">U</div>
-                    <div class="letterforqvatext">K</div>
-                    <div class="letterforqvatext">V</div>
-                    <div class="letterforqvatext">A</div>
-                    <div class="letterforqvatext">D</div>
-                    <div class="letterforqvatext">Z</div>
-                    <div class="letterforqvatext">E</div>
-                </div>
-                <!--Full Name Section-->
+<!-- ============ HERO ============ -->
+<section class="hero">
+    <div class="shell hero__grid">
 
-            <h1 class="display-4 FULLSTACKDEVELOPER" style="font-family:RobotoFlex; font-weight:300;">FULL-STACK DEVELOPER</h1>
+        <div>
+            <h1 class="hero__name">
+                <span><i>Saba</i></span>
+                <span><i class="thin">Salukvadze</i></span>
+            </h1>
+
+            <div class="hero__role">
+                <span class="bar"></span>
+                <span>Full-Stack Developer</span>
+                <span class="bar"></span>
+                <span>C# / .NET</span>
             </div>
-        <!-- Developer section -->
-            <!-- Image section -->
-            <div class="col-md-4 QvabbyteImageContainer text-center mt-lg-0 " style="align-items:center; display:flex;">
-                <div class="image-container">
-                    <img id="qvabbyteimage" class="rounded-circle" src="media/Qvabbyte/qvabbytefixed.png" />
-                    <div class="d-flex justify-content-center align-items-center ps-1 pe-1 mt-3">
-                        <a class="m-1 IconAnim" href="https://github.com/Qvabby" target="_blank"><img src="media/MediaIcons/GithubIcon.png" alt="GitHub" width="25" height="25" /></a>
-                        <a class="m-1 IconAnim" href="https://stackoverflow.com/users/14074769/qvabby" target="_blank"><img src="media/MediaIcons/StackoverflowIcon.png" alt="StackOverflow" width="25" height="25" / style="margin-top: 0.45px;"></a>
-                        <a class="m-1 IconAnim" href="https://www.linkedin.com/in/saba-salukvadze-634589268/" target="_blank"><img src="media/MediaIcons/LinkedInIcon.png" alt="LinkedIn" width="24" height="24" /></a>
-                    </div>
+
+            <div class="hero__meta">
+                <div class="stat">
+                    <div class="stat__k">Focus</div>
+                    <div class="stat__v">ASP.NET&nbsp;MVC &amp; APIs</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__k">Based in</div>
+                    <div class="stat__v">Tbilisi, Georgia</div>
+                </div>
+                <div class="stat">
+                    <div class="stat__k">Status</div>
+                    <div class="stat__v">Open to work</div>
                 </div>
             </div>
-            
+        </div>
+
+        <div class="portrait">
+            <div class="portrait__frame" data-tilt>
+                <span class="portrait__corner tl"></span>
+                <span class="portrait__corner br"></span>
+                <img src="~/media/Qvabbyte/pfp.png"
+                     alt="Saba Salukvadze"
+                     onerror="this.onerror=null;this.src='/media/Qvabbyte/qvabbytefixed.png';" />
+                <div class="portrait__tag">
+                    <span class="brand__dot"></span>
+                    <span>Athens</span>
+                </div>
+            </div>
+
+            <div class="rail">
+                <a href="https://github.com/Qvabby" target="_blank" rel="noopener">
+                    <img src="~/media/MediaIcons/GithubIcon.png" alt="" /><span>Github</span>
+                </a>
+                <a href="https://stackoverflow.com/users/14074769/qvabby" target="_blank" rel="noopener">
+                    <img src="~/media/MediaIcons/StackoverflowIcon.png" alt="" /><span>Stack</span>
+                </a>
+                <a href="https://www.linkedin.com/in/saba-salukvadze-634589268/" target="_blank" rel="noopener">
+                    <img src="~/media/MediaIcons/LinkedInIcon.png" alt="" /><span>LinkedIn</span>
+                </a>
+            </div>
         </div>
 
     </div>
 
+    <div class="cue">
+        <span class="cue__line"></span>
+        <span>Scroll</span>
+    </div>
+</section>
 
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+        <span>C#</span><span>.NET</span><span>Entity Framework</span><span>ASP.NET MVC</span>
+        <span>REST APIs</span><span>JavaScript</span><span>TypeScript</span><span>MSSQL</span>
+        <span>HTML / CSS</span><span>Java Spring</span>
+    </div>
+</div>
 
+<!-- ============ INTRO ============ -->
+<section class="section">
+    <div class="shell">
+        <div class="eyebrow"><span class="idx">01</span><span>Who</span></div>
 
+        <p class="lede reveal">
+            I build <b>things from scratch</b>. Programming, to me, is closer to an art form than
+            to assembly &mdash; you make <b>something out of nothing</b>. My stack is
+            <b>C# and .NET</b> on the back, whatever the job needs on the front, and
+            <b>clean code</b> everywhere in between.
+        </p>
 
+        <div class="reveal" data-delay="0.1" style="margin-top:2.5rem; display:flex; flex-wrap:wrap; gap:0.6rem;">
+            <a class="btn" asp-controller="Home" asp-action="AboutMe">
+                <span>More about me</span><span class="btn__arrow">&rarr;</span>
+            </a>
+            <a class="btn btn--signal" asp-controller="Home" asp-action="CV">
+                <span>Read the CV</span><span class="btn__arrow">&rarr;</span>
+            </a>
+        </div>
+    </div>
+</section>
 
-    @* <hr /> *@
-    @* <!-- About Me Section --> *@
-    @* <div class="row align-items-center text-center GrayishColor mt-1 p-3" style="border-radius: 5px;"> *@
-    @*     <div class="col-md-12"> *@
+<!-- ============ SELECTED WORK ============ -->
+<section class="section">
+    <div class="shell">
+        <div class="eyebrow"><span class="idx">02</span><span>Selected work</span></div>
 
-    @*         <!-- About Me Title --> *@
-    @*         <h3 class="mt-2">About Me</h3> *@
+        <div class="grid">
+            <a class="card reveal" href="https://wearstoneage.com" target="_blank" rel="noopener">
+                <div class="card__no">001 &mdash; Live</div>
+                <h3 class="card__title">StoneAge</h3>
+                <p class="card__desc">
+                    Streetwear brand and storefront: custom tee builder, XP loyalty feeding live
+                    giveaways, bilingual EN/ქართული, admin back office.
+                </p>
+                <span class="card__go">wearstoneage.com <span>&rarr;</span></span>
+            </a>
 
-    @*         <!-- Personal Narrative --> *@
-    @*         <p> *@
-    @*             I'm <b>passionate</b> about building <b>something from scratch.</b> I've always had the mindset that <b>programming is an art</b>, as you can <b>create something out of nothing</b>, just like an artist. *@
-    @*             My development journey started when I realized the power of code to <b>transform ideas into reality</b>. *@
-    @*         </p> *@
+            <a class="card reveal" data-delay="0.08" href="https://www.amosservice.ge/" target="_blank" rel="noopener">
+                <div class="card__no">002 &mdash; Live</div>
+                <h3 class="card__title">Amo&rsquo;s Service</h3>
+                <p class="card__desc">Towing and car services site, designed and shipped solo end to end.</p>
+                <span class="card__go">amosservice.ge <span>&rarr;</span></span>
+            </a>
 
-    @*         <!-- Personal Philosophy --> *@
-    @*         <p> *@
-    @*             My philosophy is simple: clean code, meaningful impact, and continuous learning. I strive to stay relevant with new technologies and methodologies to create innovative solutions. *@
-    @*         </p> *@
+            <a class="card reveal" data-delay="0.16" asp-controller="Home" asp-action="PublishedWorks">
+                <div class="card__no">003 &mdash; Case studies</div>
+                <h3 class="card__title">Published Works</h3>
+                <p class="card__desc">The full breakdown &mdash; features, stack notes and links.</p>
+                <span class="card__go">See the work <span>&rarr;</span></span>
+            </a>
+        </div>
+    </div>
+</section>
 
-    @*         <!-- Skill Bars --> *@
-    @*         <div class="skills mt-4"> *@
-    @*             <h5>Skills</h5> *@
-    @*             <ul class="list-group"> *@
-    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
-    @*                     <span>C# .NET EF ASP.NET RAZOR/MVC APIs</span> *@
-    @*                     <span class="badge text-success">Expert</span> *@
-    @*                 </li> *@
-    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
-    @*                     <span>HTML CSS BOOTSTRAP</span> *@
-    @*                     <span class="badge text-primary">Advanced</span> *@
-    @*                 </li> *@
-    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
-    @*                     <span>JavaScript Typescript</span> *@
-    @*                     <span class="badge text-warning">Intermediate</span> *@
-    @*                 </li> *@
-    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
-    @*                     <span>MSSQL</span> *@
-    @*                     <span class="badge text-secondary">Basic</span> *@
-    @*                 </li> *@
-    @*                 <li class="list-group-item d-flex justify-content-between align-items-center"> *@
-    @*                     <span>Java / Java Spring</span> *@
-    @*                     <span class="badge text-danger">Beginner</span> *@
-    @*                 </li> *@
-    @*             </ul> *@
-    @*         </div> *@
+<!-- ============ CTA ============ -->
+<section class="section">
+    <div class="shell">
+        <div class="eyebrow"><span class="idx">03</span><span>Next</span></div>
 
-    @*         <!-- Call-to-Action Button --> *@
-    @*         <div class="mt-4"> *@
-    @*             <a asp-controller="Home" asp-action="CV" class="btn btn-outline-dark btn-lg">View My CV</a> *@
-    @*         </div> *@
-    @*     </div> *@
-    @* </div> *@
-    @* <hr /> *@
-    <!-- Projects -->
-    @* <div class="row mt-1" style="background-color: #f0f0f0; border-radius: 5px;"> *@
-    @*     <div class="col-md-12 p-4">  *@
-    @*         <h3 class="mt-2" style="color: #333; font-weight: bold;">Projects</h3>  *@
-    @*         <h2 class="text-start text-dark" style=" font-weight: bold;">My GitHub Repositories</h2>  *@
-    @*         <div class="repositories-container scrollbar" id="scrollbar" style="overflow-y: auto; height: 500px; width:100%; padding: 10px; background-color: #fff; border: 1px solid #151B23; border-radius: 10px; border-bottom-right-radius:3px; border-top-right-radius:3px;">  *@
-    @*             @foreach (var repository in Model)  *@
-    @*             {  *@
-    @*                  <div class="card" style="margin-bottom: 20px; background-color: #161b22; border: 1px solid #ddd; border-radius: 10px;">  *@
-    @*                      <div class="card-body">  *@
-    @*                          <h3 class="card-title" style="color: #2196F3; font-weight: bold;">@repository.Name</h3>  *@
-    @*                          <p class="card-text" style="color: #666;">@repository.Description</p> *@
-    @*                         <a href="@repository.HtmlUrl" target="_blank" class="btn" style="color: #74B9FF; border: 1px solid #74B9FF;border-radius: 2px; background-color:#151B23;">View on GitHub</a> *@
-    @*                      </div> *@
-    @*                  </div> *@
-    @*              } *@
-    @*          </div> *@
-    @*      </div> *@
-    @*     <div class="col-md-12 mt-5 p-4"> *@
-    @*         <h1 style="color: #333; font-weight: bold;">My Published Works.</h1> *@
-    @*         <div class="card" style="margin-bottom: 20px; background-color: #f7f7f7; border: 1px solid #ddd; border-radius: 10px;"> *@
-    @*             <div class="card-body"> *@
-    @*                 <h2 class="card-title text-start" style="color: #333; font-weight: bold;">Amo's Service</h2> *@
-    @*                 <p class="card-text" style="color: #B7BDC8;">I've solo developed this simple website, purpose of this website is just towing and car services.</p> *@
-    @*                 <a href="https://www.amosservice.ge/" target="_blank" class="btn btn-primary btn-lg" style="background-color: #2196F3; border-color: #2196F3;">View Website</a> *@
-    @*             </div> *@
-    @*         </div> *@
-    @*     </div> *@
-    @* </div> *@
+        <h2 class="contact__big reveal">
+            Got something<br />worth building?
+        </h2>
 
+        <div class="reveal" data-delay="0.1" style="margin-top:2.6rem;">
+            <a class="btn btn--signal" asp-controller="Home" asp-action="Contact">
+                <span>Get in touch</span><span class="btn__arrow">&rarr;</span>
+            </a>
+        </div>
+    </div>
+</section>

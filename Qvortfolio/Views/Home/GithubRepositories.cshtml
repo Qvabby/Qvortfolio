@@ -1,43 +1,49 @@
-﻿@model List<GithubRepositoryViewModel>
+@model List<GithubRepositoryViewModel>
 @{
-    ViewData["Title"] = "GITHUB";
+    ViewData["Title"] = "Github";
+    var repos = Model ?? new List<GithubRepositoryViewModel>();
 }
-<div class="row GrayishColor p-0 m-0" style="background-color: #f0f0f0; border-radius: 5px; width:100%; height:100%;">
-    <div class="col-md-12 align-self-center h-75">
-        <div class="p-3" style="height:100%;">
-        <table class="skills-table h-75 ">
-            <tbody class="d-flex m-0 flex-wrap flex-column overflow-scroll overflow-visible h-100 p-2">
 
+<div class="page">
+    <section class="section">
+        <div class="shell">
+            <div class="eyebrow"><span class="idx">01</span><span>Public repositories</span></div>
 
-                    @foreach (var repository in Model)
-                    {
-                    <tr style="" class="d-flex justify-content-between h-25 p-2 border-2 border-bottom-0 border-start-0 border-top-0">
-                        <td class="p-1"><a class="repname" target="_blank" href="@repository.HtmlUrl">@repository.Name</a></td>
-                        <td class="tdonright repdescription"><span class="tag">@repository.Description</span></td>
-                    </tr>
-                    }
+            <h1 class="h-xl reveal">Source<br />code.</h1>
 
-            </tbody>  
-        </table>
+            <div class="filterbar reveal" data-delay="0.08" style="margin-top:clamp(2rem,4vw,3rem);">
+                <label class="search">
+                    <span class="search__ico">/</span>
+                    <input type="search" placeholder="Filter repositories…" data-filter-input aria-label="Filter repositories" />
+                </label>
+                <span class="count">
+                    <b data-filter-count>@repos.Count</b> / @repos.Count repos
+                </span>
+            </div>
+
+            <div class="grid" data-filter-target>
+                @{ var n = 0; }
+                @foreach (var repository in repos)
+                {
+                    n++;
+                    var search = ((repository.Name ?? "") + " " + (repository.Description ?? "")).ToLowerInvariant();
+                    <a class="card reveal" href="@repository.HtmlUrl" target="_blank" rel="noopener" data-search="@search">
+                        <div class="card__no">@n.ToString("000")</div>
+                        <h3 class="card__title">@repository.Name</h3>
+                        <p class="card__desc">
+                            @(string.IsNullOrWhiteSpace(repository.Description) ? "No description." : repository.Description)
+                        </p>
+                        <span class="card__go">Open on Github <span>&rarr;</span></span>
+                    </a>
+                }
+            </div>
+
+            <div class="empty" data-filter-empty style="display:none;">No repository matches that filter.</div>
+
+            @if (repos.Count == 0)
+            {
+                <div class="empty">No repositories to show right now.</div>
+            }
         </div>
-    </div>
-
-
-
-
-
-    @* <h3 class="mt-2" style="color: #333; font-weight: bold;">Projects</h3> *@
-
-    @* <div class="repositories-container scrollbar" id="scrollbar" style="overflow-y: auto; height: 500px; width:100%; padding: 10px; background-color: #fff; border: 1px solid #151B23; border-radius: 10px; border-bottom-right-radius:3px; border-top-right-radius:3px;"> *@
-    @*     @foreach (var repository in Model) *@
-    @*     { *@
-    @*         <div class="card" style="margin-bottom: 20px; background-color: #161b22; border: 1px solid #ddd; border-radius: 10px;"> *@
-    @*             <div class="card-body"> *@
-    @*                 <h3 class="card-title" style="color: #2196F3; font-weight: bold;">@repository.Name</h3> *@
-    @*                 <p class="card-text" style="color: #666;">@repository.Description</p> *@
-    @*                 <a href="@repository.HtmlUrl" target="_blank" class="btn" style="color: #74B9FF; border: 1px solid #74B9FF;border-radius: 2px; background-color:#151B23;">View on GitHub</a> *@
-    @*             </div> *@
-    @*         </div> *@
-    @*     } *@
-    @* </div> *@
+    </section>
 </div>
