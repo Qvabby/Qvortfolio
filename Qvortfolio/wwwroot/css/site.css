@@ -417,7 +417,7 @@ body.menu-open .burger span:nth-child(2) { transform: translateY(-4px) rotate(-4
 
 .portrait:hover .portrait__frame img {
     transform: scale(1.06);
-    filter: grayscale(0.55) contrast(1.08);
+    filter: grayscale(0) contrast(1.02);
 }
 
 .portrait__frame::after {
