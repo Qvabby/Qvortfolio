@@ -1295,3 +1295,70 @@ body.menu-open .burger span:nth-child(2) { transform: translateY(-4px) rotate(-4
         transform: none !important;
     }
 }
+
+/* ---------- diploma ---------- */
+
+.diploma {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr);
+    gap: clamp(1.6rem, 4vw, 3.5rem);
+    align-items: center;
+    padding: clamp(1.6rem, 4vw, 3.2rem);
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, var(--ink-2), var(--ink));
+    position: relative;
+}
+
+.diploma::before,
+.diploma::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border: 1px solid var(--signal);
+}
+
+.diploma::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+.diploma::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+
+.diploma__seal {
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid var(--line);
+    outline: 1px dashed var(--line);
+    outline-offset: -14px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 0.4rem;
+    background: radial-gradient(circle at 50% 40%, rgba(234, 231, 225, 0.08), transparent 70%);
+}
+
+.diploma__seal span {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.diploma__seal small {
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    color: var(--bone-mute);
+    line-height: 1.6;
+}
+
+.diploma__title {
+    font-size: clamp(2.2rem, 6vw, 4.6rem);
+    font-weight: 600;
+    letter-spacing: -0.05em;
+    line-height: 0.88;
+    text-transform: uppercase;
+    margin: 0.9rem 0 1.4rem;
+}
+
+@media (max-width: 720px) {
+    .diploma { grid-template-columns: 1fr; }
+    .diploma__seal { max-width: 170px; }
+}
